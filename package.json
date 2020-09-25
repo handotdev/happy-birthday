@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "run-script-os": "^1.0.2"
+    "run-script-os": "^1.1.1"
   },
   "scripts": {
     "start": "run-script-os",
@@ -20,7 +20,7 @@
   },
   "keywords": [
     "Happy",
-    "Birthday"
+    "One Year"
   ],
   "author": "Afiur Rahman Fahim",
   "license": "MIT",

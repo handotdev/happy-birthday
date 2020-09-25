@@ -109,7 +109,7 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
       x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
+      backgroundColor: "#ba0001",
       color: "#fff"
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
@@ -257,17 +257,9 @@ const animationTimeline = () => {
       zIndex: "-1"
     })
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 90
-      },
-      "+=1"
-    );
 
   // tl.seek("currentStep");
-  // tl.timeScale(2);
+  tl.timeScale(4);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
