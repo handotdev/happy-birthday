@@ -28,6 +28,9 @@ const animationTimeline = () => {
 
   const tl = new TimelineMax();
 
+  const song = new Audio('../song.mp3');
+  song.play();
+
   tl
     .to(".container", 0.1, {
       visibility: "visible"
@@ -194,12 +197,6 @@ const animationTimeline = () => {
       },
       "-=2"
     )
-    .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
-      rotation: -180,
-      opacity: 0
-    })
     .staggerFrom(
       ".wish-hbd span",
       0.7,
@@ -256,10 +253,18 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1"
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .from(
+      "images-1",
+      1,
+      {
+        visibility: "visible",
+      },
+      0.3
+    )
+    .staggerTo(".nine p", 1, ideaTextTrans, 1.2)
 
   // tl.seek("currentStep");
-  tl.timeScale(4);
+  // tl.timeScale(4);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");

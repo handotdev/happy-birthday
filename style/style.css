@@ -75,6 +75,10 @@ body {
   visibility: hidden;
 }
 
+.images-1 {
+  visibility: hidden;
+}
+
 .text-box .fake-btn {
   position: absolute;
   right: 5px;
